@@ -1,0 +1,14 @@
+[package]
+name = "bn979/binance-futures-bot"
+version = "0.1.0"
+description = "Binance Futures Trading Bot"
+
+[[module]]
+name = "server"
+source = "app.js"
+engine = "winterjs"
+
+[[command]]
+name = "serve"
+module = "server"
+runner = "https://webc.org/wasmer/winterjs"
